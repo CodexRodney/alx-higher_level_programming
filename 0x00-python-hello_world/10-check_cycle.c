@@ -10,7 +10,7 @@
  */
 int check_cycle(listint_t *list)
 {
-	listint_t *first, *hare;
+	listint_t *first, *last;
 
 	if (list == NULL || list->next == NULL)
 		return (0);
