@@ -11,7 +11,7 @@ def ischaracter(c):
         return True
     else:
         return False
-def upper(str):
+def uppercase(str):
     z = 0
     i = len(str)
     while z < i:
