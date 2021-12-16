@@ -6,6 +6,7 @@ def safe_print_list_integers(my_list=[], x=0):
     if x > numitems:
         raise IndexError
     num = 0
+
     new_list = []
     try:
         new_list = my_list[:x]
