@@ -29,7 +29,7 @@ class Square:
 
     @property
     def size(self):
-    """Get/set size of square"""
+        """Get/set size of square"""
         return self.__size
 
     @size.setter
@@ -62,19 +62,14 @@ class Square:
             self.__position = value[:]
 
     def area(self):
-        """
-        returns the area of the square
-
-        Args:
-            self: reference to an instance
-        """
+        """Retutn Area of square"""
         return self.__size**2
     def my_print(self):
         """
         Prints a square with the # character
 
         """
-        if self.__size == 0:
+        if self.__size == 0
             print("")
             return
         for y in range(self.__position[1]):
