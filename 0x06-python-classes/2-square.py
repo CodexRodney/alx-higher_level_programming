@@ -1,7 +1,9 @@
 #!/usr/bin/python3
 """
 
-This module defines a class called square
+defines a Class called a Square.
+The square class does instantiation of size field with default value 0
+and does verifiction which raises errors  verification is not if verification is not reached
 """
 
 
