@@ -27,26 +27,9 @@ class Square:
 
     @property
     def size(self):
-    """
-    Get size of square.
-
-    Returns:
-        The size of the square.
-    """
-        return self.__size
-
+    """Get/set size of square"""
     @size.setter
     def size(self, value):
-        """
-        Sets a value size to an object
-
-        It validates whether the value
-        is > 0 or an integer if not it raises exceptions
-
-        Args:
-            self: a reference to an object
-            Value: length or height of square
-        """
         if not isinstance(value, int):
             raise TypeError("size must be an integer")
         elif value < 0:
