@@ -15,7 +15,7 @@ class Square:
 
     defines a square
     """
-    def __init__(self,size=0):
+    def __init__(self, size=0):
         """
         Initializes a value to __size attribute
 
@@ -28,6 +28,8 @@ class Square:
     @property
     def size(self):
         """Get/set size of square"""
+        return self.__size
+
     @size.setter
     def size(self, value):
         """Get/set size of square"""
@@ -46,6 +48,7 @@ class Square:
             self: reference to an instance
         """
         return self.__size**2
+
     def my_print(self):
         """
         Prints a square with the # character
@@ -56,5 +59,5 @@ class Square:
             return
         for i in range(self.__size):
             for z in range(self.__size):
-                print("#",end="")
+                print("#", end="")
             print()
