@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 """
+
 Class Square that defines a square by:
     * Private instance attribute ``size``.
     * Instantiation with optional size.
@@ -21,15 +22,17 @@ class Square:
 
         Args:
             self: reference to instance
-            size: height or length of square
+            size(int): height or length of square
         """
         self.__size = size
 
     @property
     def size(self):
     """
+    Get size of square.
 
-    return: The size of the square
+    Returns:
+        The size of the square.
     """
         return self.__size
 
