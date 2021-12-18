@@ -1,9 +1,13 @@
 #!/usr/bin/python3
 """
 
-defines a Class called a Square.
-The square class does instantiation of size field with default value 0
-and does verifiction which raises errors  verification is not if verification is not reached
+Creates class Square that defines a square by:
+    *Private object attribute ''size''.
+    *Instantiation with optional size.
+Size must pass some verification for it to be assigned
+If it does not match the verification Square raise 
+some exceptions and handles them by printing an 
+appropriate message.
 """
 
 
