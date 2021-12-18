@@ -1,13 +1,12 @@
 #!/usr/bin/python3
 """
-Creates class Square that defines a square by:
-
-*Private object attribute ''size''.
-*Instantiation with optional size.
-Size must pass some verification for it to be assigned
-If it does not match the verification Square raise 
-some exceptions and handles them by printing an 
-appropriate message.
+Class Square that defines a square by:
+    * Private instance attribute ``size``.
+    * Instantiation with optional size.
+If size is not an integer, Square raises a ``TypeError``
+exception with the message ``size must be an integer``.
+If size is less than 0, a ``ValueError`` exception
+with the message ``size must be >= 0`` is raised.
 """
 
 
