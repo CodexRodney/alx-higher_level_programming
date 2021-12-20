@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/usr/bin/python3
 """
 
 defines a function lookup
