@@ -1,11 +1,11 @@
 #!/usr/bin/python3
 """
 
-Defines a function is_same_class
+Defines a function is_kind_of_class
 """
 
 
-def is_same_class(obj, a_class):
+def is_kind_of_class(obj, a_class):
     """
 
     Checks whether an obj is a kind of an instance
