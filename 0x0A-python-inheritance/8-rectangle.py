@@ -3,7 +3,7 @@
 
 defines a subclass Rectangle of BaseGeometry
 """
-import BaseGeometry from 7-base_geometry
+from 7-base_geometry import BaseGeometry
 
 
 class Rectangle(BaseGeometry):
