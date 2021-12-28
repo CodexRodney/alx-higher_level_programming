@@ -17,4 +17,3 @@ if __name__ == "__main__":
 
     s_args.pop(0)
     save_to_json_file(s_args, "add_item.json")
-    item.close()
