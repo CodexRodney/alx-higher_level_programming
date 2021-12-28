@@ -1,12 +1,6 @@
 #!/usr/bin/python3
 """
-Class Square that defines a square by:
-    * Private instance attribute ``size``.
-    * Instantiation with optional size.
-If size is not an integer, Square raises a ``TypeError``
-exception with the message ``size must be an integer``.
-If size is less than 0, a ``ValueError`` exception
-with the message ``size must be >= 0`` is raised.
+Class Square that defines a square by
 """
 
 
@@ -48,7 +42,9 @@ class Square:
 
     @position.setter
     def position(self, value):
-        if not len(value) == 2:
+        if not isinstance(value, tuple):
+            raise TypeError("position must be a tuple of 2 positive integers")
+        elif not len(value) == 2:
             raise TypeError("position must be a tuple of 2 positive integers")
         elif not isinstance(value[0], int):
             raise TypeError("position must be a tuple of 2 positive integers")
