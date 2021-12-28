@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 import sys
-"""Adds all arguments to a python list, then save them to a file."""
 
 if __name__ = "__main__":
     load_from_json_file = __import__('6-load_from_json_file').load_from_json_file
