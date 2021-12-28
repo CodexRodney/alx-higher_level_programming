@@ -67,13 +67,13 @@ class Square:
         Prints a square with the # character
 
         """
-        if self.__size == 0
+        if self.__size == 0:
             print("")
             return
         for y in range(self.__position[1]):
             print()
         for i in range(self.__size):
-            for w in range(sel.__position[0]:
+            for w in range(self.__position[0]):
                     print(" ", end="")
             for z in range(self.__size):
                 print("#", end="")
