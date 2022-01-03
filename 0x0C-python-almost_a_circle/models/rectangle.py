@@ -100,7 +100,11 @@ class Rectangle(Base):
             """
             Prints rectangle in stdout
             """
+            for y in range(self.y):
+                print()
             for i in range(self.height):
+                for w in range(self.x):
+                    print(" ", end="")
                 for z in range(self.width):
                     print("#", end="")
                 print()
