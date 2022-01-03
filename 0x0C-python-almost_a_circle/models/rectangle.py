@@ -104,3 +104,10 @@ class Rectangle(Base):
                 for z in range(self.width):
                     print("#", end="")
                 print()
+
+        def __str__(self):
+            """
+            Changes string representation of an object
+            """
+            rst = "[Rectangle] ({id}) {x}/{y} - {w}/{h}"
+            return rst.format(id=self.id, x=self.x, y=self.y, w=self.width, h=self.height)
