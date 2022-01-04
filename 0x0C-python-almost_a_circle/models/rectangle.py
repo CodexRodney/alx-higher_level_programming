@@ -94,7 +94,7 @@ class Rectangle(Base):
         """
         Returns area of rectangle
         """
-        return self.x * self.y
+        return self.width * self.height
 
     def display(self):
         """
@@ -116,29 +116,33 @@ class Rectangle(Base):
         rst = "[Rectangle] ({id}) {x}/{y} - {w}/{h}"
         return rst.format(id=self.id, x=self.x, y=self.y, w=self.width, h=self.height)
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """
         Assigns an argument to each attribute
         """
-        if len(args) == 0:
-            self.__init__(width, height)
-        if len(args) == 1:
-            self.id = args[0]
-        if len(args) == 2:
-            self.id = args[0]
-            self.width = args[1]
-        if len(args) == 3:
-            self.id = args[0]
-            self.width = args[1]
-            self.height = args[2]
-        if len(args) == 4:
-            self.id = args[0]
-            self.width = args[1]
-            self.height = args[2]
-            self.x = args[3]
-        if len(args) >= 5:
-            self.id = args[0]
-            self.width = args[1]
-            self.height = args[2]
-            self.x = args[3]
-            self.y = args[4]
+        if len(args) > 0:
+            for i, val in enumerate(args):
+                if i == 0:
+                    self.id = val
+                if i == 1:
+                    self.width = val
+                if i == 2:
+                    self.height = val
+                if i == 3:
+                    self.x = val
+                if i == 4:
+                    self.y = val
+                if i > 4:
+                    break
+        else:
+            for key, value in kwargs.items():
+                if key == 'height':
+                    self.height = value
+                if key == 'x':
+                    self.x = value
+                if key == 'y':
+                    self.y = value
+                if key == 'width':
+                    self.width = value
+                if key == 'id':
+                    self.id = value
