@@ -74,4 +74,4 @@ class Square(Rectangle):
     				self.width = value
     				self.height = value
     			if key == 'id':
-    				self.id = value	
+    				self.id = value
