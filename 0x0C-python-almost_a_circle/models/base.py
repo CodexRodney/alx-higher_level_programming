@@ -13,10 +13,10 @@ class Base:
     """
     __nb_objects = 0
     def __init__(self, id=None):
-        if id is None:
             """
             Instatiation of id attribute
             """
+        if id is None:
             Base.__nb_objects += 1
             self.id = Base.__nb_objects
         else:
@@ -93,4 +93,4 @@ class Base:
                 list_dict = Base.from_json_string(myFile.read())
                 return [cls.create(**d) for d in list_dict]
         except IOError:
-            return []             
+            return []
