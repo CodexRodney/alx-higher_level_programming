@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 """
 
 Defines a class Base
@@ -64,3 +65,32 @@ class Base:
             return []
         else:
             return json.loads(json_string)
+
+    @classmethod
+    def create(cls, **dictionary):
+        """
+        Return a class instantiated from a dictionary of attributes.
+
+        Args:
+            **dictionary: value pairs of attributes to instatiate
+        """
+        if dictionary and dictionary != {}:
+            if cls.__name__ == "Rectangle":
+                new = cls(1, 1)
+            else:
+                new = cls(1)
+            new.update(**dictionary)
+            return new
+
+    @classmethod
+    def load_from_file(cls):
+        """
+        Return list of classes instantiated from a file of JSON strings
+        """
+        filename = "{}.json".format(cls.__name__)
+        try:
+            with open(filename, 'r') as myFile:
+                list_dict = Base.from_json_string(myFile.read())
+                return [cls.create(**d) for d in list_dict]
+        except IOError:
+            return []             
