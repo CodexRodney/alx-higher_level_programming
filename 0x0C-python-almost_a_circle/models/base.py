@@ -12,6 +12,7 @@ class Base:
     Base class for all other classes in the project
     """
     __nb_objects = 0
+
     def __init__(self, id=None):
         """
         Instantiation of id attribute
