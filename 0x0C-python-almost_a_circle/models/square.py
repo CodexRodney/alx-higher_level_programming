@@ -32,49 +32,49 @@ class Square(Rectangle):
 
     @property
     def size(self):
-    	"""
-    	Setter/getter of size
-    	"""
-    	return self.width
+    """
+        Setter/getter of size
+    """
+        return self.width
 
     @size.setter
     def size(self, value):
-    	if not isinstance(value, int):
-    		raise TypeError("width must be an integer")
-    	elif value <= 0:
-    		raise ValueError("width must be > 0")
-    	else:
-    		self.width = value
-    		self.height = value
+        if not isinstance(value, int):
+            raise TypeError("width must be an integer")
+        elif value <= 0:
+            raise ValueError("width must be > 0")
+        else:
+            self.width = value
+            self.height = value
 
     def update(self, *args, **kwargs):
-    	"""
-    	Assigns an argument to each list
-    	"""
-    	if len(args) > 0:
-    		for i, val in enumerate(args):
-    			if i == 0:
-    				self.id = val
-    			if i == 1:
-    				self.width = val
-    				self.height = val
-    			if i == 2:
-    				self.x = val
-    			if i == 3:
-    				self.y = val
-    			if i > 3:
-    				break
-    	else:
-    		for key, value in kwargs.items():
-    			if key == 'x':
-    				self.x = value
-    			if key == 'y':
-    				self.y = value
-    			if key == 'size':
-    				self.width = value
-    				self.height = value
-    			if key == 'id':
-    				self.id = value
+        """
+        Assigns an argument to each list
+        """
+        if len(args) > 0:
+            for i, val in enumerate(args):
+                if i == 0:
+                    self.id = val
+                if i == 1:
+                    self.width = val
+                    self.height = val
+                if i == 2:
+                    self.x = val
+                if i == 3:
+                    self.y = val
+                if i > 3:
+                    break
+        else:
+            for key, value in kwargs.items():
+                if key == 'x':
+                    self.x = value
+                if key == 'y':
+                    self.y = value
+                if key == 'size':
+                    self.width = value
+                    self.height = value
+                if key == 'id':
+                    self.id = value
 
     def to_dictionary(self):
         """
