@@ -115,7 +115,8 @@ class Rectangle(Base):
         Changes string representation of an object
         """
         rt = "[Rectangle] ({i}) {x}/{y} - {w}/{h}"
-        return rt.format(i=self.id, x=self.x, y=self.y, w=self.width, h=self.height)
+        return (rt.format(i=self.id,
+                x=self.x, y=self.y, w=self.width, h=self.height))
 
     def update(self, *args, **kwargs):
         """
@@ -152,11 +153,10 @@ class Rectangle(Base):
         """
         Returns Dictionary representation of a Rectangle
         """
-        re = {
-        'x' : self.x,
-        'y' : self.y,
-        'id' : self.id,
-        'height' : self.height,
-        'width' : self.width
-        }
-        return re
+        return {
+                'x': self.x,
+                'y': self.y,
+                'id': self.id,
+                'height': self.height,
+                'width': self.width
+                }
