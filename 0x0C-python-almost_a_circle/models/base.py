@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
 
-Defines a class Base
+Defines a class Base from which other classes inherit from
 """
 
 import json
@@ -9,13 +9,13 @@ import json
 
 class Base:
     """
-    Base class
+    Base class for all other classes in the project
     """
     __nb_objects = 0
     def __init__(self, id=None):
-            """
-            Instatiation of id attribute
-            """
+        """
+        Instantiation of id attribute
+        """
         if id is None:
             Base.__nb_objects += 1
             self.id = Base.__nb_objects
