@@ -5,4 +5,4 @@ const mylist = require('./100-data.js').list;
 const newList = mylist.map((x, index) => x * index);
 
 console.log(mylist);
-console.log(newList)
+console.log(newList);
