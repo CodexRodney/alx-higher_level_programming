@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+
 """
 lists all states from the database hbtn_0e_0_usa
 """
@@ -10,7 +11,7 @@ def main():
     """
     The main fuction where everything runs from
     """
-    db = MySQLdb.connect(host=argv[1], passwd=argv[2], db=argv[3])
+    db = MySQLdb.connect(user=argv[1], passwd=argv[2], db=argv[3])
     cursor = db.cursor()
     sql = ("SELECT names FROM states ORDER BY id")
     cursor.execute(sql)
