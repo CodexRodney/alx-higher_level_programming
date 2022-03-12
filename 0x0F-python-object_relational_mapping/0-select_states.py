@@ -11,9 +11,9 @@ def main():
     """
     The main fuction where everything runs from
     """
-    db = MySQLdb.connect(user=argv[1], passwd=argv[2], db=argv[3])
-    cursor = db.cursor()
-    sql = ("SELECT names FROM states ORDER BY id")
+    database = MySQLdb.connect(user=argv[1], passwd=argv[2], db=argv[3])
+    cursor = database.cursor()
+    sql = ("SELECT * FROM states ORDER BY id")
     cursor.execute(sql)
     results = cursor.fetchall()
     for x in results:
