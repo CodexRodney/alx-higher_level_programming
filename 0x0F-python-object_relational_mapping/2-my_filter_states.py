@@ -1,4 +1,9 @@
 #!/usr/bin/python3
+
+"""
+Takes an argument and displays all values in the states
+matching the argument
+"""
 from sys import argv
 import MySQLdb
 

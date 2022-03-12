@@ -1,4 +1,8 @@
 #!/usr/bin/python3
+
+"""
+lists all states with a name satrting with N from a database
+"""
 from sys import argv
 import MySQLdb
 
