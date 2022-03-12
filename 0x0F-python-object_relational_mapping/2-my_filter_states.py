@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 from sys import argv
 import MySQLdb
 
@@ -6,9 +7,9 @@ def main():
     """
     runs as the main fuction
     """
-    db = MySQLdb.connect(host=argv[2], passwd=argv[3], db=argv[4])
-    sql = "SELECT * FROM states WHERE name = {} ORDER BY id ASC;"
-    sql.format(argv[4])
+    db = MySQLdb.connect(user=argv[1], passwd=argv[2], db=argv[3])
+    sql = ("SELECT * FROM states WHERE name = '{}' ORDER BY id ASC"
+           .format(argv[4]))
     cursor = db.cursor()
     cursor.execute(sql)
     results = cursor.fetchall()
