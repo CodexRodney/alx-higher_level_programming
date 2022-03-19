@@ -21,7 +21,7 @@ def main:
     request = urllib.request.Request(url, headers)
     with urllib.request.urlopen(request) as response:
         body = response.read().decode("utf-8")
-        print(body)
+        print("Your email is: {}".format(body)
 
 
 if __name__ == "__main__":
