@@ -9,7 +9,7 @@ import sys
 import urllib
 
 
-def main:
+def main():
     """
     runs as the main method
     """

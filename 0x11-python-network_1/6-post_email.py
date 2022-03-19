@@ -9,7 +9,7 @@ import sys
 import requests
 
 
-def main:
+def main():
     """
     runs as the main method
     """
@@ -20,5 +20,5 @@ def main:
     print("Your email is: {}".format(res.text))
 
 
-if __name___ == "__main__":
+if __name__ == "__main__":
     main()
