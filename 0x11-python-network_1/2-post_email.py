@@ -8,10 +8,14 @@ decoded in utf-8
 import sys
 import urllib
 
+
 def main:
+    """
+    runs as the main method
+    """
     url = str(sys.argv[1])
     mail = str(sys.argv[2])
-    value  = {'email' : mail }
+    value = {'email': mail}
     data = urllib.parse.urlencode(value).encode("ascii")
 
     request = urllib.request.Request(url, headers)

@@ -8,6 +8,7 @@ import urllib.error
 import urllib.request
 import sys
 
+
 def main():
     """
     Main function where the program runs

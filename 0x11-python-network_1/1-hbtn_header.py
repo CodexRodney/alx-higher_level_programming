@@ -7,7 +7,11 @@ value of X-Request_Id variable
 import urllib.request
 import sys
 
+
 def main():
+    """
+    runs as the main methos
+    """
     url = str(sys.argv[1])
     req = urllib.request.Request(url)
     with urllib.request.urlopen(req) as response:
