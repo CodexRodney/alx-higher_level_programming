@@ -6,7 +6,8 @@ decoded in utf-8
 """
 
 import sys
-import urllib
+import urllib.parse
+import urllib.request
 
 
 def main():
@@ -21,7 +22,7 @@ def main():
     request = urllib.request.Request(url, headers)
     with urllib.request.urlopen(request) as response:
         body = response.read().decode("utf-8")
-        print("Your email is: {}".format(body))
+        print("Email: {}".format(body))
 
 
 if __name__ == "__main__":
