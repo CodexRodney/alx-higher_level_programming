@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 #takes in a uRL sends a request to the url, prints the 
 #size of the ody of the response
 
