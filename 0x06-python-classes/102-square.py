@@ -42,6 +42,7 @@ class Square:
             self: reference to an instance
         """
         return self.__size**2
+
     def __eq__(self, other):
         """
         Checks whether two squares are equal returns true else false

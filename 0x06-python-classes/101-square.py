@@ -56,7 +56,7 @@ class Square:
             self.__position = value[:]
 
     def area(self):
-        """Retutn Area of square"""
+        """Return Area of square"""
         return self.__size**2
 
     def __str__(self):
@@ -65,7 +65,6 @@ class Square:
 
         """
         if self.__size == 0:
-            print("")
             return ("")
         for y in range(self.__position[1]):
             print("")
@@ -74,5 +73,6 @@ class Square:
                 print(" ", end="")
             for z in range(self.__size):
                 print("#", end="")
-            print("")
+            if i != self.__size - 1:
+                print("")
         return ("")
