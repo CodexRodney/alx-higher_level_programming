@@ -9,7 +9,7 @@ class Square:
 
     defines a square
     """
-    def __init__(self,size=0,position=(0,0)):
+    def __init__(self, size=0, position=(0, 0)):
         """
         Initializes value to instances created
 
@@ -58,6 +58,7 @@ class Square:
     def area(self):
         """Retutn Area of square"""
         return self.__size**2
+
     def my_print(self):
         """
         Prints a square with the # character
@@ -70,7 +71,7 @@ class Square:
             print()
         for i in range(self.__size):
             for w in range(self.__position[0]):
-                    print(" ", end="")
+                print(" ", end="")
             for z in range(self.__size):
                 print("#", end="")
             print()
