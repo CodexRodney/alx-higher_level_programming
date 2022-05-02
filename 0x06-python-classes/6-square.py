@@ -18,8 +18,8 @@ class Square:
             size(int): height or length of square
             position(tuple): contains coordinates of the square
         """
-        self.__size = size
-        self.__position = position[:]
+        self.size = size
+        self.position = position[:]
 
     @property
     def size(self):
