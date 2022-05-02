@@ -4,6 +4,7 @@ Defines a class called Rectangle
 
 """
 
+
 class Rectangle:
     """
     A class Rectangle
@@ -24,9 +25,10 @@ class Rectangle:
     def width(self):
         """
         Returns the width of a rectangle
-        
+
         """
         return self.__width
+
     @width.setter
     def width(self, value):
         """
@@ -47,6 +49,7 @@ class Rectangle:
 
         """
         return self.__height
+
     @height.setter
     def height(self, value):
         """

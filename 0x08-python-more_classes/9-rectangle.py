@@ -4,14 +4,14 @@ Defines a class called Rectangle
 
 """
 
+
 class Rectangle:
     """
     A class Rectangle
 
     """
-    #variable holding number of rectangles
-    number_of_instances = 0
-    print_symbol = "#" #represents the symbol to represent rectangle
+    number_of_instances = 0  # contains number of rectangles
+    print_symbol = "#"  # represents the symbol to represent rectangle
 
     def __init__(self, width=0, height=0):
         """
@@ -29,9 +29,10 @@ class Rectangle:
     def width(self):
         """
         Returns the width of a rectangle
-        
+
         """
         return self.__width
+
     @width.setter
     def width(self, value):
         """
@@ -52,6 +53,7 @@ class Rectangle:
 
         """
         return self.__height
+
     @height.setter
     def height(self, value):
         """
