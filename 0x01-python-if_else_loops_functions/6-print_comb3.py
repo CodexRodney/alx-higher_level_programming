@@ -7,3 +7,4 @@ for i in range(0, 10):
             break
         print(",", end=" ")
         j += 1
+print()
