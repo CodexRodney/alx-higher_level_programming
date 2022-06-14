@@ -5,12 +5,13 @@ Lists all State objects from the database hbtn_)e_6_usa
 
 
 from model_state import Base, State
-import sys
+from sys import argv
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy import create_engine
 
 
-engine = create_engine('mysql://{}:{}@localhost:3306/{}'.format(sys.argv[1], sys.argv[2], sys.argv[3]))
+str1 = 'mysql://{}:{}@localhost:3306/{}'.format(argv[1], argv[2], argv[3])
+engine = create_engine(str1)
 DBSession = sessionmaker(bind=engine)
 session = DBSession()
 results = session.query(State).order_by(State.id).all()
