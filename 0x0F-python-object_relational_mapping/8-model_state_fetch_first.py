@@ -18,4 +18,4 @@ if __name__ == "__main__":
     results = session.query(State).first()
     if results is None:
         print("Nothing")
-    print(results.id, ": ", results.name)
+    print("{}: {}".format(results.id, results.name))

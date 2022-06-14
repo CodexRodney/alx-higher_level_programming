@@ -16,4 +16,4 @@ DBSession = sessionmaker(bind=engine)
 session = DBSession()
 results = session.query(State).order_by(State.id).all()
 for i in results:
-    print(i.id, ": ", i.name)
+    print("{}: {}".format(i.id, i.name))
