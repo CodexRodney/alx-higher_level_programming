@@ -19,7 +19,7 @@ def main():
     value = {'email': mail}
     data = urllib.parse.urlencode(value).encode("ascii")
 
-    request = urllib.request.Request(url, headers)
+    request = urllib.request.Request(url, data)
     with urllib.request.urlopen(request) as response:
         body = response.read().decode("utf-8")
         print(body)
