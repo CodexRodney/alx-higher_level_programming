@@ -17,7 +17,7 @@ def main():
     email = str(sys.argv[2])
     header = {'email': email}
     res = requests.post(url, data=header)
-    print("email: {}".format(res.text))
+    print(res.text["email"])
 
 
 if __name__ == "__main__":
