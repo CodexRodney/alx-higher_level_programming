@@ -17,5 +17,6 @@ if __name__ == "__main__":
     engine = create_engine(str1)
     DBSession = sessionmaker(bind=engine)
     session = DBSession()
-    results = session.query(State).filter(State.name.like('%a%')).delete(synchronize_session=False)
+    results = session.query(State).filter(State.name.like('%a%')) \
+        .delete(synchronize_session=False)
     session.commit()
