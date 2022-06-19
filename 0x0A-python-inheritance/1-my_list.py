@@ -7,8 +7,7 @@ defines a class MyList
 
 class Mylist(list):
     """
-
-    inherited Class from baseclass list
+    Inherited Class from baseclass list
     """
     def print_sorted(self):
         """
