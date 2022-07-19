@@ -5,7 +5,7 @@
  * file path to store content also passed as a command line argument
  */
 
-request = require('request');
-fs = require('fs');
+const request = require('request');
+const fs = require('fs');
 
 request(process.argv[2]).pipe(fs.createWriteStream(process.argv[3]));
