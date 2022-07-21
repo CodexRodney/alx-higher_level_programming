@@ -15,4 +15,10 @@ class Square(Rectangle):
         Instantiates the size of the square
         """
         self.integer_validator("size", size)
-        return "[Square] {0}/{0}".format(self.__size)
+        self.__size = size
+
+    def area(self):
+        """
+        Returns area of a square
+        """
+        return self.__size ** 2
