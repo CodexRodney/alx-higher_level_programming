@@ -4,7 +4,7 @@ defines a class MyList
 """
 
 
-class Mylist(list):
+class MyList(list):
     """
     Inherited Class from baseclass list
     """
