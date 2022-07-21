@@ -3,6 +3,7 @@
 Defines a class Myint
 """
 
+
 class MyInt(int):
     """
     Inherits from int
@@ -12,7 +13,6 @@ class MyInt(int):
         Inverts the == operator to !=
         """
         return self.real != other
-        
 
     def __ne__(self, other):
         """
