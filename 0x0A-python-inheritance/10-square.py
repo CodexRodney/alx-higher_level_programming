@@ -15,4 +15,4 @@ class Square(Rectangle):
         Instantiates the size of the square
         """
         self.integer_validator("size", size)
-        return "[Square] {0}/{0}".format(self.__height)
+        return "[Square] {0}/{0}".format(self.__size)
